@@ -1,46 +1,46 @@
-## Contador de Horas do Dia
+Project: Digital Clock with Image
+Description:
 
-**Descrição:**
+This simple project creates a web page that displays the current time and a corresponding image based on the time of day (morning, afternoon, or night). The time is updated every minute.
 
-Este projeto simples cria uma página web que exibe a hora atual e uma imagem correspondente ao período do dia. A hora é atualizada a cada minuto.
+Files:
 
-**Arquivos:**
+index.html: The main HTML file for the web page, containing the basic structure.
+style.css: CSS file for styling the page and customizing its appearance.
+script.js: JavaScript file containing the logic to update the time and change the image.
+How it works:
 
-* **index.html:** Arquivo principal da página web, contendo a estrutura HTML.
-* **style.css:** Arquivo de estilo CSS para customizar a aparência da página.
-* **script.js:** Arquivo JavaScript com a lógica para atualizar a hora e alterar a imagem.
+Page Load:
+The browser loads the index.html file.
+The onload event of the body calls the mudar() function in script.js.
+Time Update:
+The mudar() function gets the current time from the system.
+The HTML elements displaying the time are updated with the obtained values.
+Image Change:
+The function checks the current time and changes the image to correspond to the time of day (morning, afternoon, or night). This part can be customized to add more images or logic.
+Continuous Update:
+The setInterval() function calls the mudar() function every minute, ensuring the time is always displayed correctly.
+Customization:
 
-**Como funciona:**
+Style: Modify the style.css file to customize the appearance of the page.
+Images: Add more images to represent different times of day.
+Logic: Modify the logic in the mudar() function to add more features, such as:
+Displaying the time in 24-hour format.
+Adding an analog clock.
+Implementing an alarm.
+Synchronizing with a precise time server.
+Usage:
 
-1. **Carregamento da página:**
-   * O navegador carrega o arquivo index.html.
-   * O evento `onload` do corpo da página chama a função `mudar()` em script.js.
-2. **Atualização da hora:**
-   * A função `mudar()` obtém a hora atual do sistema.
-   * Os elementos HTML que exibem a hora são atualizados com os valores obtidos.
-3. **Alteração da imagem:**
-   * A função verifica a hora atual e altera a imagem para corresponder ao período do dia (manhã, tarde ou noite). Esta parte pode ser personalizada para adicionar mais imagens ou lógica.
-4. **Atualização contínua:**
-   * A função `setInterval()` chama a função `mudar()` a cada minuto, garantindo que a hora seja sempre exibida corretamente.
+Clone the repository:
+Bash
 
-**Personalização:**
+git clone [https://seu-repositorio.git](https://seu-repositorio.git)
+Open the index.html file: Open the index.html file in a web browser.
+Notes:
 
-* **Estilo:** Modifique o arquivo style.css para personalizar a aparência da página.
-* **Imagens:** Adicione mais imagens para representar diferentes períodos do dia.
-* **Lógica:** Altere a lógica na função `mudar()` para adicionar mais funcionalidades, como:
-  * Exibir a hora em formato de 24 horas.
-  * Adicionar um relógio analógico.
-  * Implementar um alarme.
-  * Sincronizar com um servidor de hora preciso.
+This is a basic project and can be expanded with various features.
+The logic for changing the image is simple and can be improved to consider different time zones or lighting conditions.
+For greater accuracy, you can use a JavaScript library specialized in handling dates and times.
+Contributions:
 
-**Uso:**
-
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://seu-repositorio.git](https://seu-repositorio.git)
-Abra o arquivo index.html: Abra o arquivo index.html em um navegador web.
-Observações:
-
-Este é um projeto básico e pode ser expandido com diversas funcionalidades.
-A lógica para alterar a imagem é simples e pode ser aprimorada para considerar diferentes fusos horários ou condições de iluminação.
-Para uma maior precisão, você pode utilizar uma biblioteca JavaScript especializada em manipulação de datas e horas.
+Feel free to contribute to this project! Fork, make your changes, and send a pull request.
